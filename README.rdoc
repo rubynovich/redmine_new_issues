@@ -1,0 +1,3 @@
+= New issues (redmine plugin)
+
+Block for my/page and rake-task for mail delivery (IssueStatus.default)

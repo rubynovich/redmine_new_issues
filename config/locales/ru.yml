@@ -1,0 +1,4 @@
+# Russian strings go here for Rails i18n
+ru:
+  issuesassignedtomewithdefaultstatus: "Новые задачи"
+  label_new_issue_plural: "Новые задачи"  
