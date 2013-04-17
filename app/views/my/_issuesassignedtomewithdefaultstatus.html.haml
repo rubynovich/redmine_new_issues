@@ -1,5 +1,5 @@
 - status_id = IssueStatus.default.try(:id)
-- issues = Issue.visible.open.where(:assigned_to_id => User.current.id, :status_id => status_id)
+- issues = Issue.visible.open.where(:assigned_to_id => User.current.id, :status_id => status_id).where("start_date <= ?", Date.today)
 
 %h3
   = l(:label_new_issue_plural)
