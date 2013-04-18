@@ -1,4 +1,11 @@
 # Russian strings go here for Rails i18n
 ru:
   issuesassignedtomewithdefaultstatus: "Новые задачи"
-  label_new_issue_plural: "Новые задачи"  
+  label_new_issue_plural: "Новые задачи"
+  mail_body_greeting: "Уважаемый  %{firstname}  %{lastname},"
+  mail_subject_new_issues1: " %{count} новая задача должна быть принята в работу"
+  mail_subject_new_issues2: " %{count} новых задачи должны быть приняты в работу"
+  mail_subject_new_issues5: " %{count} новых задач должны быть приняты в работу"
+  mail_body_new_issues1: " %{count} новая задача, назначенная Вам, должна быть принята в работу:"
+  mail_body_new_issues2: " %{count} новые задачи, назначенные Вам, должны быть приняты в работу:"
+  mail_body_new_issues3: " %{count} новых задач, назначенных Вам, должны быть приняты в работу:"

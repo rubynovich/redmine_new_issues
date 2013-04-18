@@ -2,3 +2,10 @@
 en:
   issuesassignedtomewithdefaultstatus: "New issues"
   label_new_issue_plural: "New issues"
+  mail_body_greeting: "Dear  %{firstname}  %{lastname},"
+  mail_subject_new_issues1: " %{count} new issue must take the work"
+  mail_subject_new_issues2: " %{count} new issues must take the work"
+  mail_subject_new_issues5: " %{count} new issues must take the work"
+  mail_body_new_issues1: " %{count} new issue that is assigned to you must take the work:"
+  mail_body_new_issues2: " %{count} new issues that are assigned to you must take the work:"
+  mail_body_new_issues5: " %{count} new issues that are assigned to you must take the work:"
