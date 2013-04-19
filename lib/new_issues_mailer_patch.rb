@@ -16,7 +16,7 @@ module NewIssuesPlugin
         mailcopy = options[:cc]
         status = IssueStatus.default
         new_issues = Issue.open.where(:status_id => status.id).where("start_date <= ?", Date.today)
-        new_issues.map(&:assigned_to).uniq.map do |user|
+        new_issues.select(&:assigned_to).map(&:assigned_to).uniq.map do |user|
           new_issues_mail(user, new_issues.where(:assigned_to_id => user.id), mailcopy).deliver
         end
       end
