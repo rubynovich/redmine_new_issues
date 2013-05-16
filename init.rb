@@ -17,12 +17,13 @@ else
 end
 
 object_to_prepare.to_prepare do
-  [:mailer].each do |cl|
+  [:mailer, :issue_observer].each do |cl|
     require "new_issues_#{cl}_patch"
   end
 
   [
-    [Mailer, NewIssuesPlugin::MailerPatch]
+    [Mailer, NewIssuesPlugin::MailerPatch],
+    [IssueObserver, NewIssuesPlugin::IssueObserverPatch]
   ].each do |cl, patch|
     cl.send(:include, patch) unless cl.included_modules.include? patch
   end
