@@ -17,7 +17,7 @@ module NewIssuesPlugin
 
     module InstanceMethods
       def after_create_with_new_issues(issue)
-        after_create_without_new_issues(issue) if issue.start_date > Date.today
+        after_create_without_new_issues(issue) if issue.start_date <= Date.today
       end
     end
   end
