@@ -14,8 +14,8 @@ module NewIssuesPlugin
     end
 
     module InstanceMethods
-      def send_notification_with_new_issues(issue)
-        send_notification_without_new_issues(issue) if issue.start_date && (issue.start_date <= Date.today)
+      def send_notification_with_new_issues
+        send_notification_without_new_issues if issue.start_date && (issue.start_date <= Date.today)
       end
     end
   end
